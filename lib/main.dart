@@ -254,6 +254,7 @@ class MyHomePage extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 15.0),
                     child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
                         Container(
                           decoration: BoxDecoration(
@@ -270,9 +271,6 @@ class MyHomePage extends StatelessWidget {
                             ),
                           ),
                         ),
-                        SizedBox(
-                          width: 15,
-                        ),
                         Container(
                           decoration: BoxDecoration(
                             color: Colors.black.withOpacity(.4),
@@ -288,9 +286,6 @@ class MyHomePage extends StatelessWidget {
                             ),
                           ),
                         ),
-                        SizedBox(
-                          width: 15,
-                        ),
                         Container(
                           decoration: BoxDecoration(
                             color: Colors.black.withOpacity(.4),
@@ -305,9 +300,6 @@ class MyHomePage extends StatelessWidget {
                               style: TextStyle(color: Colors.white),
                             ),
                           ),
-                        ),
-                        SizedBox(
-                          width: 15,
                         ),
                         Container(
                           decoration: BoxDecoration(
