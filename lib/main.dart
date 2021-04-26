@@ -113,14 +113,25 @@ class MyHomePage extends StatelessWidget {
               child: Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(20.0),
+                    padding: const EdgeInsets.only(top: 20.0),
                     child: Container(
                       width: 300,
                       child: Text(
-                        'Flutter Developer based in Lagos Nigeria with a great love for design, anime and good music.',
+                        'Nigerian based Flutter Developer with a great love for design, anime and good music.',
                         style: TextStyle(
                             fontSize: 15, fontWeight: FontWeight.w400),
                         textAlign: TextAlign.center,
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: SizedBox(
+                      width: 100,
+                      child: Divider(
+                        color: Colors.brown,
+                        thickness: 1.5,
+                        height: 15,
                       ),
                     ),
                   ),
