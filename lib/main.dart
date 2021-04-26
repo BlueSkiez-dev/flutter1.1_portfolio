@@ -21,6 +21,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
+// Welcome to Spaghetti Code!!!
 class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -90,6 +91,9 @@ class MyHomePage extends StatelessWidget {
                               Icons.location_on_outlined,
                               color: Colors.white,
                               size: 13,
+                            ),
+                            SizedBox(
+                              width: 2,
                             ),
                             Text(
                               'Lagos',
