@@ -287,7 +287,7 @@ class MyHomePage extends StatelessWidget {
                         height: 25,
                       ),
                       Image.asset(
-                        'assets/images/linedin.png',
+                        'assets/images/linkedin.png',
                         height: 25,
                       ),
                       Image.asset(
