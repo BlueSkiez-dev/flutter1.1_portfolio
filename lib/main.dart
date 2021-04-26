@@ -42,10 +42,6 @@ class MyHomePage extends StatelessWidget {
                         bottomLeft: Radius.circular(80),
                         bottomRight: Radius.circular(80),
                       ),
-                      image: DecorationImage(
-                        image: AssetImage('assets/images/mim.png'),
-                        fit: BoxFit.fill,
-                      ),
                       shape: BoxShape.rectangle,
                     ),
                   ),
