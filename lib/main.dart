@@ -11,9 +11,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(
-        fontFamily: "Quicksand",
-      ),
+      // theme: ThemeData(
+      //   fontFamily: "Quicksand",
+      // ),
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       home: MyHomePage(),
@@ -21,7 +21,10 @@ class MyApp extends StatelessWidget {
   }
 }
 
-// Welcome to Spaghetti Code!!!
+// ------------  Welcome to Spaghetti Code!!! ------------------------
+//
+//
+//
 class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -34,7 +37,6 @@ class MyHomePage extends StatelessWidget {
               children: [
                 Positioned.fill(
                   child: Container(
-                    height: 320.0,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.only(
                         bottomLeft: Radius.circular(80),
@@ -65,8 +67,12 @@ class MyHomePage extends StatelessWidget {
                         height: 20,
                       ),
                       CircleAvatar(
-                        radius: 55,
-                        backgroundImage: AssetImage('assets/images/ima1.jpg'),
+                        radius: 35,
+                        foregroundColor: Colors.brown,
+                        child: Icon(
+                          Icons.account_circle,
+                          size: 60,
+                        ),
                       ),
                       Text(
                         'Clement B.',
@@ -90,7 +96,7 @@ class MyHomePage extends StatelessWidget {
                             Icon(
                               Icons.location_on_outlined,
                               color: Colors.white,
-                              size: 13,
+                              size: 15,
                             ),
                             SizedBox(
                               width: 2,
@@ -115,9 +121,9 @@ class MyHomePage extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.only(top: 20.0),
                     child: Container(
-                      width: 300,
+                      width: 250,
                       child: Text(
-                        'Nigerian based Flutter Developer with a great love for design, anime and good music.',
+                        'Flutter Developer intern at Zuri Academy. I build, deploy and maintain robust and scalable web, mobile and desktop applications.',
                         style: TextStyle(
                             fontSize: 15, fontWeight: FontWeight.w400),
                         textAlign: TextAlign.center,
@@ -125,7 +131,7 @@ class MyHomePage extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.all(15.0),
                     child: SizedBox(
                       width: 100,
                       child: Divider(
@@ -136,180 +142,210 @@ class MyHomePage extends StatelessWidget {
                     ),
                   ),
                   Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Container(
-                        child: Image.asset(
-                          'assets/images/ert.png',
-                          height: 30,
-                        ),
+                      Row(
+                        children: [
+                          Icon(
+                            Icons.access_time_rounded,
+                            size: 20,
+                            color: Colors.brown,
+                          ),
+                          SizedBox(
+                            width: 8,
+                          ),
+                          Column(
+                            children: [
+                              Text(
+                                '1+ Years',
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold, fontSize: 12),
+                              ),
+                              Text('Beginner')
+                            ],
+                          ),
+                        ],
                       ),
-                      Image.asset(
-                        'assets/images/email.png',
-                        height: 30,
+                      Row(
+                        children: [
+                          Icon(
+                            Icons.grade,
+                            size: 20,
+                            color: Colors.brown,
+                          ),
+                          SizedBox(
+                            width: 8,
+                          ),
+                          Column(
+                            children: [
+                              Text(
+                                '5 Certificates',
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold, fontSize: 12),
+                              ),
+                              Text('Achieved')
+                            ],
+                          ),
+                        ],
                       ),
-                      Image.asset(
-                        'assets/images/skype.png',
-                        height: 30,
+                      Row(
+                        children: [
+                          Icon(
+                            Icons.content_paste_rounded,
+                            size: 20,
+                            color: Colors.brown,
+                          ),
+                          SizedBox(
+                            width: 8,
+                          ),
+                          Column(
+                            children: [
+                              Text(
+                                '1 Internship',
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold, fontSize: 12),
+                              ),
+                              Text('Completed')
+                            ],
+                          ),
+                        ],
                       ),
                     ],
+                  ),
+                  SizedBox(
+                    height: 15,
                   ),
                   Padding(
                     padding: const EdgeInsets.only(
-                      top: 20.0,
+                      top: 10.0,
                     ),
                     child: Row(
                       children: [
                         Text(
-                          'SKILLS',
-                          style: TextStyle(fontWeight: FontWeight.bold),
+                          'EXPERIENCE',
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 16),
                         ),
                       ],
                     ),
                   ),
-                  SizedBox(
-                    height: 15,
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 15.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Were getting there...',
+                          style: TextStyle(
+                              fontSize: 15, fontWeight: FontWeight.w400),
+                        )
+                      ],
+                    ),
                   ),
                   Row(
                     children: [
-                      Container(
-                        decoration: BoxDecoration(
-                          color: Colors.black.withOpacity(.4),
-                          borderRadius: BorderRadius.all(
-                            Radius.circular(60),
-                          ),
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Text(
-                            'Dart',
-                            style: TextStyle(color: Colors.white),
-                          ),
-                        ),
-                      ),
-                      SizedBox(
-                        width: 15,
-                      ),
-                      Container(
-                        decoration: BoxDecoration(
-                          color: Colors.black.withOpacity(.4),
-                          borderRadius: BorderRadius.all(
-                            Radius.circular(60),
-                          ),
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Text(
-                            'Flutter',
-                            style: TextStyle(color: Colors.white),
-                          ),
-                        ),
-                      ),
-                      SizedBox(
-                        width: 15,
-                      ),
-                      Container(
-                        decoration: BoxDecoration(
-                          color: Colors.black.withOpacity(.4),
-                          borderRadius: BorderRadius.all(
-                            Radius.circular(60),
-                          ),
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Text(
-                            'Lorem Ipsum random...',
-                            style: TextStyle(color: Colors.white),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                  SizedBox(
-                    height: 15,
-                  ),
-                  Row(
-                    children: [
-                      Container(
-                        decoration: BoxDecoration(
-                          color: Colors.black.withOpacity(.4),
-                          borderRadius: BorderRadius.all(
-                            Radius.circular(60),
-                          ),
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Text(
-                            'Django',
-                            style: TextStyle(color: Colors.white),
-                          ),
-                        ),
-                      ),
-                      SizedBox(
-                        width: 15,
-                      ),
-                      Container(
-                        decoration: BoxDecoration(
-                          color: Colors.black.withOpacity(.4),
-                          borderRadius: BorderRadius.all(
-                            Radius.circular(60),
-                          ),
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Text(
-                            'Lorem Ipsum',
-                            style: TextStyle(color: Colors.white),
-                          ),
-                        ),
-                      ),
-                      SizedBox(
-                        width: 15,
-                      ),
-                      Container(
-                        decoration: BoxDecoration(
-                          color: Colors.black.withOpacity(.4),
-                          borderRadius: BorderRadius.all(
-                            Radius.circular(60),
-                          ),
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Text(
-                            'Lorem ',
-                            style: TextStyle(color: Colors.white),
-                          ),
-                        ),
+                      Text(
+                        'SKILLS',
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 16),
                       ),
                     ],
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(top: 20.0, bottom: 20.0),
+                    padding: const EdgeInsets.symmetric(vertical: 15.0),
                     child: Row(
                       children: [
-                        Text(
-                          'LINKS',
-                          style: TextStyle(fontWeight: FontWeight.bold),
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.black.withOpacity(.4),
+                            borderRadius: BorderRadius.all(
+                              Radius.circular(60),
+                            ),
+                          ),
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Text(
+                              'Dart',
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: 15,
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.black.withOpacity(.4),
+                            borderRadius: BorderRadius.all(
+                              Radius.circular(60),
+                            ),
+                          ),
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Text(
+                              'Flutter',
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: 15,
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.black.withOpacity(.4),
+                            borderRadius: BorderRadius.all(
+                              Radius.circular(60),
+                            ),
+                          ),
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Text(
+                              'Python',
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: 15,
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.black.withOpacity(.4),
+                            borderRadius: BorderRadius.all(
+                              Radius.circular(60),
+                            ),
+                          ),
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Text(
+                              'Django....',
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ),
                         ),
                       ],
                     ),
                   ),
                   Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Image.asset(
-                        'assets/images/github.png',
-                        height: 25,
-                      ),
-                      Image.asset(
-                        'assets/images/linkedin.png',
-                        height: 25,
-                      ),
-                      Image.asset(
-                        'assets/images/dribbble.png',
-                        height: 25,
+                      Text(
+                        'CONTACT ME',
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 16),
                       ),
                     ],
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 15.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Icon(Icons.phone),
+                        Icon(Icons.mail),
+                        Icon(Icons.textsms_rounded),
+                      ],
+                    ),
                   ),
                 ],
               ),
