@@ -38,10 +38,17 @@ class MyHomePage extends StatelessWidget {
                 Positioned.fill(
                   child: Container(
                     decoration: BoxDecoration(
-                      color: Colors.brown,
+                      // https://ibb.co/F6qMtCw
+                      // https://ibb.co/CP4sCHR
+
                       borderRadius: BorderRadius.only(
                         bottomLeft: Radius.circular(80),
                         bottomRight: Radius.circular(80),
+                      ),
+                      image: DecorationImage(
+                        image: NetworkImage(
+                            "https://i.postimg.cc/CLx8DNp3/mim.png"),
+                        fit: BoxFit.fill,
                       ),
                       shape: BoxShape.rectangle,
                     ),
@@ -64,12 +71,10 @@ class MyHomePage extends StatelessWidget {
                         height: 20,
                       ),
                       CircleAvatar(
-                        radius: 35,
+                        backgroundImage: NetworkImage(
+                            'https://i.postimg.cc/W37DqDWp/ima1.jpg'),
+                        radius: 45,
                         foregroundColor: Colors.brown,
-                        child: Icon(
-                          Icons.account_circle,
-                          size: 60,
-                        ),
                       ),
                       Text(
                         'Clement B.',
