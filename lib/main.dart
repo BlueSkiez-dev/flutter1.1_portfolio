@@ -38,9 +38,6 @@ class MyHomePage extends StatelessWidget {
                 Positioned.fill(
                   child: Container(
                     decoration: BoxDecoration(
-                      // https://ibb.co/F6qMtCw
-                      // https://ibb.co/CP4sCHR
-
                       borderRadius: BorderRadius.only(
                         bottomLeft: Radius.circular(80),
                         bottomRight: Radius.circular(80),
@@ -73,7 +70,7 @@ class MyHomePage extends StatelessWidget {
                       CircleAvatar(
                         backgroundImage: NetworkImage(
                             'https://i.postimg.cc/W37DqDWp/ima1.jpg'),
-                        radius: 45,
+                        radius: 35,
                         foregroundColor: Colors.brown,
                       ),
                       Text(
@@ -344,7 +341,7 @@ class MyHomePage extends StatelessWidget {
                               Icon(Icons.phone),
                               Text(
                                 '+2348089657504',
-                                style: TextStyle(fontSize: 12),
+                                style: TextStyle(fontSize: 10),
                               ),
                             ],
                           ),
@@ -353,7 +350,7 @@ class MyHomePage extends StatelessWidget {
                               Icon(Icons.mail),
                               Text(
                                 'basseygt40@gmail.com',
-                                style: TextStyle(fontSize: 12),
+                                style: TextStyle(fontSize: 10),
                               ),
                             ],
                           ),
